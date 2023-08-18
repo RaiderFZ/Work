@@ -1,0 +1,476 @@
+/* =============== Общие классы ===============*/
+* {
+    font-family: "Montserrat", sans-serif ;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+
+    background-color: #1D2327;
+    color: #fff
+}
+
+.inner {
+    padding: 145px 139px 122px 136px;
+}
+
+.btn {
+    padding: 20px 40px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* =============== Левая часть  ===============*/
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forms__left {
+    padding-right: 160px;
+    height: 743px;
+}
+    /* =============== Кнопки Лето\Зима ===============*/
+    .form_radio_btn {
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        
+    }
+    .form_radio_btn input[type=radio] {
+        display: none;
+    }
+    .form_radio_btn label {
+        display: inline-block;
+        cursor: pointer;
+        padding: 15px 44px;
+        line-height: 34px;
+        border: 1px solid #000;
+        user-select: none;
+        background: #000;
+        
+    }
+     
+    /* Checked */
+    .form_radio_btn input[type=radio]:checked + label {
+        background: #EC1C23;
+    }
+
+
+    /* =============== Drop Down Меню ===============*/
+
+.forms__title {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.forms__left-dropdown {
+    padding-bottom: 30px;
+    
+}
+
+.forms__select {
+    max-width: 250px;
+
+    margin-bottom: 30px;
+
+    background-color: #000;
+}
+
+.forms__select.is-active .forms__select-body {
+    display: block;
+}
+
+.forms__select-header {
+    border: 1px solid #000000;
+    display: flex;
+
+    cursor: pointer;
+}
+.forms__select-current {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px;
+}
+.forms__select-icon {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.forms__select-body {
+    color: #fff;
+    line-height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+
+    padding-left: 50px;
+
+    background-color: #000;
+
+    width: 250px;
+    height: 42px;
+}
+
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url("../image/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: 10%; 
+}
+
+.select__item {
+    line-height: 24px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.select__item:hover {
+    background-color: #f2f2f2;
+}
+
+
+.dropdown__btn {
+    width: 305px;
+    height: 57px;
+
+    font-size: 14px;
+    font-weight: 600;
+    
+    background-color: #EC1C23;
+    color: #fff;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+.dropdown__btn:hover {
+    transform: scale(1.01);
+}
+    /* =============== Календарь ===============*/
+
+    
+
+.forms__left-date {
+    display: flex;
+    
+    padding-bottom: 85px;
+}
+
+.date__container {
+    margin-right: 50px;
+}
+
+.date__day-label {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.date__day-input {
+    padding: 12.5px 20px;
+}
+
+input[type="date"]{
+    width: 250px;
+    height: 42px;
+    background: #000 url(../image/calendar.svg) no-repeat;
+    background-size: 20px;
+    background-position: 90%;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #505050;
+
+    border: none;
+    outline: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
+
+    /* =============== Кастомный номер сессии ===============  */
+    .date__session-counter {
+        margin-top: 30px;
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        max-width: 111px;
+        max-height: 42px;
+      }
+      
+      .counter__btn {
+        cursor: pointer;
+        padding: 5px;
+      }
+      
+      .counter__btn img {
+        height: 20px;
+      }
+      
+      .counter__input {
+        font-size: 16px;
+        padding: 5px;
+        
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      .counter__input::before {
+        content: url(../image/arrow-left.svg) ;
+      }
+
+      .counter__input::after {
+        content: url(../image/arrow-right.svg) ;
+      }
+      
+/* .date__session-title {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.date__session-counter {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.counter__btn {
+    flex: 0 0 30px;
+    height: 42px;
+    border: 1px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000;
+
+    cursor: pointer;
+} */
+
+.counter__input {
+    width: 100%;     
+}
+
+.counter__input input {
+    width: 51px;
+    height: 42px;
+    background-color: #000;
+    border: none;
+    text-align: center;
+}
+
+    /* =============== Цена & Картинка ===============*/
+
+.forms__left-label {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.price__number {
+    color: #EC1C23;
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+/* =============== Правая часть ===============*/
+
+.forms__contact {
+    max-height: 746px;
+    max-width: 555px;
+    background-color: #000;
+    padding: 70px 91px 70px 80px;
+}
+
+.contact__title-head {
+    padding-bottom: 20px;
+}
+
+.contact__title-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    
+    padding-bottom: 30px;
+}
+
+.textarea1 {
+    resize: none;
+    max-height: 168px;
+}
+
+form .textarea1  {
+    padding: 20px 40px;
+}
+
+form .forms__contact-btn {
+    padding: 20px 120px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #EC1C23;
+    cursor: pointer
+}
+
+.input-block {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 12.5px 40px;
+    text-transform: uppercase;
+    background-color: #1D2327;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input-block::placeholder {
+    color: #fff;
+}
+
+.checkbox-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #EC1C23;
+    align-items: center;
+}
+
+.forms__contact-checkbox {
+    margin-right: 15px;
+}
+
+/* =============== Адаптив =============== */
+
+/* =============== 1600px =============== */
+
+@media only screen and (max-width: 1600px) { 
+    .inner {
+        padding: 50px 50px 50px 50px;
+    }
+    
+}
+
+/* =============== 1400px =============== */
+@media only screen and (max-width: 1400px) { 
+    .forms__left {
+        padding-right: 50px;
+    }
+
+    .forms__contact {
+        padding: 70px 50px 70px 50px;
+    }
+    
+}
+/* =============== 1200px =============== */
+@media only screen and (max-width: 1200px) { 
+    .forms{
+        flex-direction: column;
+    }
+    .forms__left {
+        margin-bottom: 50px;
+        padding-right: 0;
+    }
+
+}
+
+
+/* =============== Адаптив для мобильных устройств =============== */
+
+@media screen and (max-width: 700px) { 
+    
+    .forms__contact {
+        max-width: 100%;
+    }
+    
+    .inner {
+            
+        padding:20px 15px;
+    }
+}
+@media screen and (max-width: 425px) { 
+    .title {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 15px 40px;
+    }
+
+    .forms__left-season{
+        text-align: center;
+    }
+
+    .forms__left-label {
+        padding-bottom: 20px;
+    }
+    .dropdown__btn {
+        width: 100%;
+        height: 48px;
+    }
+    .forms__left-date {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .car-image {
+        width: 100%;
+    }
+
+    .forms__left {
+        margin-bottom: 10px;
+        padding-right: 0;
+    }
+    .forms__contact {
+        padding: 20px 20px 20px 20px;
+    }
+    .date__container {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .date__session-counter {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        justify-content: center;
+    }
+    .input-block::placeholder {
+        font-size: 10px;
+    }
+    
+    .contact__title-text {
+        font-size: 12px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    form .forms__contact-btn {
+        font-size: 12px;
+        padding: 10px 20px;
+        height: 48px;
+    }
+}
+
+
+
+
